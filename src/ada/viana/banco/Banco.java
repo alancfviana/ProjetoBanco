@@ -4,6 +4,7 @@ import ada.viana.banco.model.Pessoa;
 import ada.viana.banco.utils.LerTeclado;
 
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -11,7 +12,8 @@ public class Banco {
 
     public static void main(String[] args) {
         System.out.println("Bem vindo ao banco Ada.");
-        //LerTeclado teclado = new LerTeclado();
+        BigDecimal numero = BigDecimal.valueOf(10);
+
         int numero = LerTeclado.getNumero();
         Pessoa pessoa1 = new Pessoa("Bruno", "12345678922",LocalDate.parse("2002-03-11"));
         //Pessoa pessoa2 = new Pessoa("Eduardo", "000000000000", "2002", "11968399600");
